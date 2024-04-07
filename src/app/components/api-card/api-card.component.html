@@ -1,0 +1,21 @@
+<div class="api-card">
+    <div>
+        
+        <div class="api-card-title">{{api?.API}}</div>
+    
+        <div> Category: {{api?.Category}}</div>
+    
+        <div> Auth: {{api?.Auth ? api?.Auth : 'No Auth'}}</div>
+    
+        <div> CORS: {{api?.Cors}}</div>
+    
+        <div> HTTPS: {{api?.HTTPS}}</div>
+    
+        <div> Description: {{api?.Description}}</div>
+
+    </div>
+
+    <div style="text-align: center;">
+        <a [href]="api?.Link" target="_blank">Go to API</a>
+    </div>
+</div>

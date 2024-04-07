@@ -1,0 +1,22 @@
+@media only screen and (max-width: 4000px) {
+    .results-width {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .results-width {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .results-width {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .results-width {
+        width: 100%;
+    }
+}

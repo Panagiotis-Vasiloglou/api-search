@@ -1,0 +1,13 @@
+
+<div *ngIf="apisList && apisList.length;else noResults" class="flex" style="margin-top: 10px;flex-wrap: wrap;">
+    <div *ngFor="let api of apisList" class="results-width">
+        <app-api-card [api]="api"></app-api-card>
+    </div>
+</div>
+
+<!-- In case of user's input has no results -->
+<ng-template #noResults>
+    <div class="flex justify-center" style="margin-top: 10px;">
+        No results
+    </div>
+</ng-template>
