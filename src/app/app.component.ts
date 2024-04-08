@@ -14,6 +14,6 @@ export class AppComponent implements OnDestroy {
 
     // Close the stream
     ngOnDestroy(): void {
-        this.apiService.apiSearchValue.unsubscribe();
+        this.apiService.productSearchValue.unsubscribe();
     }
 }

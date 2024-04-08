@@ -1,7 +1,7 @@
 
-<div *ngIf="apisList && apisList.length;else noResults" class="flex" style="margin-top: 10px;flex-wrap: wrap;">
-    <div *ngFor="let api of apisList" class="results-width">
-        <app-api-card [api]="api"></app-api-card>
+<div *ngIf="productsList && productsList.length;else noResults" class="flex" style="margin-top: 10px;flex-wrap: wrap;">
+    <div *ngFor="let product of productsList" class="results-width">
+        <app-api-card [product]="product"></app-api-card>
     </div>
 </div>
 

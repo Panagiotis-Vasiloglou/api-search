@@ -1,14 +1,12 @@
-export interface IGetApisResponse {
-    count: number;
-    entries: IApi[];
-}
-
-export interface IApi {
-    API: string,
-    Description: string,
-    Auth: string,
-    HTTPS: boolean,
-    Cors: 'yes'|'no'|'unknown',
-    Link: string,
-    Category: string
+export interface IProduct {
+    id: number;
+    title: string;
+    description: string;
+    price: number;
+    discountPercentage: number;
+    rating: number;
+    stock: number;
+    brand: string;
+    category: string;
+    thumbnail: string;
 }

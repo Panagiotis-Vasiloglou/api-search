@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IApi } from '../../core/models/api-model.interface';
+import { IProduct } from '../../core/models/api-model.interface';
 
 @Component({
   selector: 'app-api-card',
@@ -8,7 +8,7 @@ import { IApi } from '../../core/models/api-model.interface';
 })
 export class ApiCardComponent {
 
-    @Input() api: IApi|null = null;
+    @Input() product: IProduct|null = null;
 
     constructor(){}
 }

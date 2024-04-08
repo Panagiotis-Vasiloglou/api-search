@@ -6,3 +6,7 @@
     max-width: 2000px;
     margin: auto;
 }
+
+.w-full {
+    width: 100%
+}

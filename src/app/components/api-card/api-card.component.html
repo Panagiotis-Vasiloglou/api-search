@@ -1,21 +1,16 @@
 <div class="api-card">
     <div>
         
-        <div class="api-card-title">{{api?.API}}</div>
+        <div class="api-card-title">{{product?.title}}</div>
+        
+        <img [src]="product?.thumbnail" alt="Product_Image" style="width: 100%;height: 170px;object-fit: cover;">
     
-        <div> Category: {{api?.Category}}</div>
+        <div> Brand: {{product?.brand}}</div>
+        
+        <div> Category: {{product?.category}}</div>
+        
+        <div> Price: {{product?.price}}$</div>
     
-        <div> Auth: {{api?.Auth ? api?.Auth : 'No Auth'}}</div>
-    
-        <div> CORS: {{api?.Cors}}</div>
-    
-        <div> HTTPS: {{api?.HTTPS}}</div>
-    
-        <div> Description: {{api?.Description}}</div>
-
     </div>
 
-    <div style="text-align: center;">
-        <a [href]="api?.Link" target="_blank">Go to API</a>
-    </div>
 </div>

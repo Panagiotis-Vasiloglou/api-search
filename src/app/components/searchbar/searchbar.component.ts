@@ -16,6 +16,6 @@ export class SearchbarComponent implements OnInit {
         // set correctly to 'HTMLInputElement'
         const target = event.target as HTMLInputElement;
         // notify our stream with new value
-        this.apiService.apiSearchValue.next(target.value);
+        this.apiService.productSearchValue.next(target.value);
     }
 }
